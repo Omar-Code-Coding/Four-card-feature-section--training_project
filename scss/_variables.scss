@@ -1,0 +1,36 @@
+$color-supervisor: hsl(180, 62%, 55%);
+$color-team-builder: hsl(0, 78%, 62%);
+$color-calculator: hsl(212, 86%, 64%);
+$color-karma: hsl(34, 97%, 64%);
+
+$color-neutral-1: hsl(234, 12%, 34%);        // Very Dark Blue
+$color-neutral-2: hsl(229, 6%, 66%);         // Grayish Blue
+$color-neutral-3: hsl(0, 0%, 98%);           // Very Light Gray
+$color-neutral-4: white;
+
+@media screen and (max-width: 48em) {
+    .heading {
+        font-size: 1.2rem;
+    }
+    .card {
+        &--supervisor {
+            grid-column: 1 / span 2;
+            grid-row: 1 / 2;
+        }
+
+        &--team-builder {
+            grid-column: 1 / span 2;
+            grid-row: 2 / 3;
+        }
+
+        &--calculator {
+            grid-column: 1 / span 2;
+            grid-row: 4 / 5;
+        }
+
+        &--karma {
+            grid-column: 1 / span 2;
+            grid-row: 5 / 6;
+        }
+    }
+}
